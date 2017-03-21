@@ -1,3 +1,7 @@
+# Mac finder files and hidden folders
+.DS_Store
+
+# pi-gen files to ignore
 deploy/*
 work/*
 config
