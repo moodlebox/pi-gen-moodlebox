@@ -6,10 +6,10 @@ install -m 744 files/policy-rc.d ${ROOTFS_DIR}/usr/sbin/policy-rc.d #TODO: Neces
 install -v -m 644 files/fstab ${ROOTFS_DIR}/etc/fstab
 
 on_chroot << EOF
-if ! id -u pi >/dev/null 2>&1; then
-	adduser --disabled-password --gecos "" pi
+if ! id -u moodlebox >/dev/null 2>&1; then
+	adduser --disabled-password --gecos "" moodlebox
 fi
-echo "pi:raspberry" | chpasswd
+echo "moodlebox:Moodlebox4$" | chpasswd
 echo "root:root" | chpasswd
 EOF
 
