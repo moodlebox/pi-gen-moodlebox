@@ -4,8 +4,6 @@
 # pi-gen files to ignore
 deploy/*
 work/*
-config
 postrun.sh
-SKIP
 .pc
 *-pc
