@@ -8,12 +8,12 @@ rm -f ${IMG_FILE}
 rm -rf ${ROOTFS_DIR}
 mkdir -p ${ROOTFS_DIR}
 
-BOOT_SIZE=$(du -s ${EXPORT_ROOTFS_DIR}/boot --block-size=1 | cut -f 1)
-TOTAL_SIZE=$(du -s ${EXPORT_ROOTFS_DIR} --exclude var/cache/apt/archives --block-size=1 | cut -f 1)
+BOOT_SIZE=$(du --apparent-size -s ${EXPORT_ROOTFS_DIR}/boot --block-size=1 | cut -f 1)
+TOTAL_SIZE=$(du --apparent-size -s ${EXPORT_ROOTFS_DIR} --exclude var/cache/apt/archives --block-size=1 | cut -f 1)
 
-IMG_SIZE=$((BOOT_SIZE + TOTAL_SIZE + (400 * 1024 * 1024)))
+IMG_SIZE=$((BOOT_SIZE + TOTAL_SIZE + (800 * 1024 * 1024)))
 
-fallocate -l ${IMG_SIZE} ${IMG_FILE}
+truncate -s ${IMG_SIZE} ${IMG_FILE}
 fdisk -H 255 -S 63 ${IMG_FILE} <<EOF
 o
 n
