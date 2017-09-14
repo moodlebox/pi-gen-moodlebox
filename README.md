@@ -66,6 +66,10 @@ The following environment variables are supported:
 
    Output directory for target system images and NOOBS bundles.
 
+ * `USE_QEMU` (Default: `"0"`)
+
+   This enable the Qemu mode and set filesystem and image suffix if set to 1.
+
 
 A simple example for building Raspbian:
 
@@ -166,7 +170,7 @@ from `./stage2` (if building a minimal system).
 # Example for building a lite system
 echo "IMG_NAME='Raspbian'" > config
 touch ./stage3/SKIP ./stage4/SKIP ./stage5/SKIP
-rm stage4/EXPORT*
+rm stage4/EXPORT* stage5/EXPORT*
 sudo ./build.sh  # or ./build-docker.sh
 ```
 
