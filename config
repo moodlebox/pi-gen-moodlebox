@@ -1,1 +1,4 @@
 IMG_NAME='MoodleBox'
+FIRST_USER_NAME='moodlebox'
+FIRST_USER_PASS='Moodlebox4$'
+ENABLE_SSH=1
