@@ -1,10 +1,3 @@
 # mariadb-server preseed selections (http://dba.stackexchange.com/questions/59317/install-mariadb-10-on-ubuntu-without-prompt-and-no-root-password)
 mariadb-server mysql-server/root_password password Moodlebox4$
 mariadb-server mysql-server/root_password_again password Moodlebox4$
-
-# phpmyadmin preseed selections
-phpmyadmin phpmyadmin/mysql/admin-pass password Moodlebox4$
-phpmyadmin phpmyadmin/mysql/app-pass password Moodlebox4$
-phpmyadmin phpmyadmin/app-password-confirm password Moodlebox4$
-phpmyadmin phpmyadmin/reconfigure-webserver multiselect none
-phpmyadmin phpmyadmin/dbconfig-install boolean true
