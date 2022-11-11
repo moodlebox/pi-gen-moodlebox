@@ -1,5 +1,5 @@
 UNRELEASED:
-  *
+  * Install kms++-utils
 2022-09-22:
   * NodeRED removed from Recommended Software and full image - should only be installed via apt
   * Improved speed of startup of lxpanel network controller plugins
@@ -648,9 +648,9 @@ UNRELEASED:
   * Mouse double-click speed setting added to mouse and keyboard preference application
   * Option to enable / disable 1-wire interface and remote access to pigpio added to Raspberry Pi config application
   * File system automatically expanded on first boot
-  * Empty Wastebasket option added to right-click menu 
+  * Empty Wastebasket option added to right-click menu
   * Ctrl-Alt-T can be used to open a terminal window
-  * Various small bug fixes and appearance tweaks 
+  * Various small bug fixes and appearance tweaks
   * Updated firmware and kernel (https://github.com/raspberrypi/firmware/commit/cc6d7bf8b4c03a2a660ff9fdf4083fc165620866)
 2016-03-18:
   * updated firmware and kernel (https://github.com/raspberrypi/firmware/commit/951799bbcd795ddf27769d14acf4813fdcbe53dc)
@@ -748,7 +748,7 @@ UNRELEASED:
   * Update omxplayer
 2013-12-18:
   * Firmware updated and now using kernel 3.10. Many, many improvements
-  * fbturbo XOrg driver is now included and enabled by default. Thanks to 
+  * fbturbo XOrg driver is now included and enabled by default. Thanks to
     ssvb https://github.com/ssvb/xf86-video-fbturbo
   * Update Scratch image with further bug fixes
   * Include Wolfram Mathematica
@@ -766,7 +766,7 @@ UNRELEASED:
     from NOOBS
 2013-09-10:
   * Updated to current top of tree firmware
-  * Update squeak-vm, including fastblit optimised for the Raspbery Pi 
+  * Update squeak-vm, including fastblit optimised for the Raspbery Pi
   * Include Sonic Pi and a fixed jackd2 package
   * Support boot to Scratch
   * Inherit keyboard and language settings from NOOBS
