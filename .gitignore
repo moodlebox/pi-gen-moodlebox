@@ -7,4 +7,3 @@ work/*
 postrun.sh
 .pc
 *-pc
-apt-cacher-ng/
